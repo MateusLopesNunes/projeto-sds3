@@ -30,3 +30,7 @@ html, body {
 .text-primary {
     color: var(--color-primary) !important;
 }
+
+.ButtonMenu {
+    background-color: 248, 249, 250;
+}
