@@ -1,21 +1,23 @@
 //import './menu.css';
 
+import { Link } from "react-router-dom";
+
 const Menu = () => {
     return (
         <>
             <div>
-                <a className="nav-link active text-dark fs-6 fw-bold" aria-current="page" href="#">Home</a>
+                <Link className="nav-link active text-dark fs-6 fw-bold" aria-current="page" to="#">Home</Link>
             </div>
             <div className="dropdown">
-            <a className="nav-link dropdown-toggle text-dark fs-6 fw-bold" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Opções</a>
+            <Link className="nav-link dropdown-toggle text-dark fs-6 fw-bold" to="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Opções</Link>
                 <ul className="dropdown-menu" aria-labelledby="dropdown01">
-                <li><a className="dropdown-item" href="#">Cadastro</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                <li><Link className="dropdown-item" to="#">Cadastro</Link></li>
+                <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                <li><Link className="dropdown-item" to="#">Something else here</Link></li>
                 </ul>
             </div>
             <div>
-                <a className="nav-link active text-dark fs-6 fw-bold" aria-current="page" href="#">Ajuda</a>
+                <Link className="nav-link active text-dark fs-6 fw-bold" aria-current="page" to="#">Ajuda</Link>
             </div>
         </>
     );
